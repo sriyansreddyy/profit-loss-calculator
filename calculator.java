@@ -1,9 +1,10 @@
 import java.util.Scanner;
-public class calculator{
-  public static void main()
+public class index{
+
+  public static void main(String [] args)
     {
-      int cp=1; //defines cost price
-      int sp=1; //defines sale price
+      double cp=1; //defines cost price
+      double sp=1; //defines sale price
       
       System.out.println("\f"); //to clear screen
       Scanner input = new Scanner(System.in);
@@ -14,11 +15,16 @@ public class calculator{
       System.out.println("2.Enter Sale Price(SP)");
       sp = input.nextInt();
       
-      if(cp>sp)
+       if (cp>sp) {
         System.out.println("It's a loss by Rs "+ (cp-sp));
-      else if (sp>cp)
+        System.out.println("Loss Percent- " + ((cp-sp)/cp*100) + "%");
+      } else if (sp > cp){
         System.out.println("It's a profit by Rs "+ (sp-cp));
-      else
-        System.out.println("Both values are same. So, no profit or no loss.");
+        System.out.println("Profit Percent- " + ((sp-cp)/cp*100) + "%"); 
+      } 
+        else{
+            System.out.println("Both values are equal, so no profit or no loss");
+        }
+        
     }
 }
