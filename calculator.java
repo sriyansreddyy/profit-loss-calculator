@@ -17,7 +17,7 @@ public class calculator{
       if(cp>sp)
         System.out.println("It's a loss by Rs "+ (cp-sp));
       else if (sp>cp)
-        System.ot.println("It's a profit by Rs "+ (sp-cp));
+        System.out.println("It's a profit by Rs "+ (sp-cp));
       else
         System.out.println("Both values are same. So, no profit or no loss.");
     }
