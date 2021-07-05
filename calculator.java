@@ -3,7 +3,7 @@ public class index{
 
   public static void main(String [] args)
     {
-      double cp=1; //defines cost price
+      double cp=1; //defines cost price 
       double sp=1; //defines sale price
       
       System.out.println("\f"); //to clear screen
